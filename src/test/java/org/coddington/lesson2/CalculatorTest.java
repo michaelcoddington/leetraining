@@ -9,8 +9,20 @@ import static junit.framework.Assert.assertEquals;
  */
 public class CalculatorTest {
 
+    private Calculator calc = new Calculator();
+
     @Test
     public void testAdd() {
-        assertEquals(1, 2);
+        assertEquals(4, calc.add(2, 2));
+    }
+
+    @Test
+    public void testSquare() {
+        assertEquals(16, calc.square(4));
+    }
+
+    @Test
+    public void testCube() {
+        assertEquals(8, calc.cube(2));
     }
 }

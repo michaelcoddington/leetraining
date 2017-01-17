@@ -29,4 +29,8 @@ public class Calculator {
         return multiply(i, i);
     }
 
+    int cube(int i) {
+        return 0; // this isn't right -- to be done by Lee
+    }
+
 }
