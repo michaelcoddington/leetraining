@@ -25,4 +25,9 @@ public class CalculatorTest {
     public void testCube() {
         assertEquals(8, calc.cube(2));
     }
+
+    @Test
+    public void testPowerOf4() {
+        assertEquals(16, calc.powerOf4(2));
+    }
 }

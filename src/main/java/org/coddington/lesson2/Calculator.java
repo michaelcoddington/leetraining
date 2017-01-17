@@ -33,4 +33,8 @@ public class Calculator {
         return 0; // this isn't right -- to be done by Lee
     }
 
+    int powerOf4(int i) {
+        return 0; // this isn't right -- to be done by Lee
+    }
+
 }
