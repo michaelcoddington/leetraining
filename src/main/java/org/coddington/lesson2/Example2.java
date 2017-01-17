@@ -50,7 +50,8 @@ public class Example2 {
         int x = 9 + calc.add(2, 3);
         System.out.println("9 + (2 + 3) is " + x);
 
-        // the lesson is: I love you Lee!
+        // the lesson is: I love you Michaelß
+        // anythingß!
 
     }
 
