@@ -33,7 +33,7 @@ public class Calculator {
 
     }
 
-    int powerOf4(int i) { return square(i) * square(i);
+    int powerOf4(int i) { return square(i) * square(i); }
 
     int powerOf5(int i) { return multiply(square(i), cube(i)); }
 
