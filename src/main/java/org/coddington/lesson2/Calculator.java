@@ -29,12 +29,18 @@ public class Calculator {
         return multiply(i, i);
     }
 
-    int cube(int i) {
-        return 0; // this isn't right -- to be done by Lee
+    int cube(int i) { return multiply(square(i), i);
+
     }
 
-    int powerOf4(int i) {
-        return 0; // this isn't right -- to be done by Lee
+    int powerOf4(int i) { return square(i) * square(i);
+
+    int powerOf5(int i) { return multiply(square(i), cube(i)); }
+
+    int powerOf6(int i) { return multiply(cube(i), cube(i)); }
+
+
+
     }
 
 }
