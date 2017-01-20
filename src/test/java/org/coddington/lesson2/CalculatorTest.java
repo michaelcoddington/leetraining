@@ -32,7 +32,13 @@ public class CalculatorTest {
     }
 
     @Test
-    public void testPowerOf5() { assertEquals(32, calc.powerOf5( 2)) }
+    public void testPowerOf5() {
+        assertEquals(32, calc.powerOf5(2));
+    }
 
     @Test
-    public void testPowerOf6() {assertEquals(64, calc.powerOf6( 2)) }
+    public void testPowerOf6() {
+        assertEquals(64, calc.powerOf6(2));
+    }
+
+}
