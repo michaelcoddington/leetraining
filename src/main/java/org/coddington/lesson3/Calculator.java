@@ -1,9 +1,13 @@
-package org.coddington.lesson2;
+package org.coddington.lesson3;
 
 /**
  * @author michaelcoddington
  */
 public class Calculator {
+
+    boolean isOn() {
+        return true;
+    }
 
     int add(int a1, int a2) {
         int a3 = a1 + a2;
@@ -34,7 +38,7 @@ public class Calculator {
     }
 
     int powerOf4(int i) {
-        return square(i) * square(i);
+        return square(square(i));
     }
 
     int powerOf5(int i) {
@@ -44,5 +48,6 @@ public class Calculator {
     int powerOf6(int i) {
         return multiply(cube(i), cube(i));
     }
+
 
 }
