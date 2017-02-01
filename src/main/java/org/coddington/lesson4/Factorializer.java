@@ -1,9 +1,9 @@
-package org.coddington.lesson3;
+package org.coddington.lesson4;
 
 /**
  * A factorial is a given number multiplied by all numbers less than it, and greater than 0.
- * <p>
- * <p>
+
+ *
  * which means factorial(4) is 4 * 3 * 2 * 1
  * or factorial(10) = 10 * 9 * 8 * 7 * 6 * 5 * 4 * 3 * 2 * 1
  *
@@ -11,15 +11,11 @@ package org.coddington.lesson3;
  */
 public class Factorializer {
 
-    public int factorial(int numberToFactor) {
-        int factorialReturn = 1;
+    Calculator calc = new Calculator();
 
-        for (int i = 1; i <= numberToFactor; i = i + 1) {
-            factorialReturn = factorialReturn * i;
-        }
-
-        return factorialReturn;
+    public int factorial(int i) {
+        int result = 1;
+        return 0;
     }
 
 }
-
