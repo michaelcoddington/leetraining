@@ -14,7 +14,7 @@ public class Factorializer {
     public int factorial(int numberToFactor) {
         int factorialReturn = 1;
 
-        for (int i = 1; i <= numberToFactor; i = i + 1) {
+        for (int i = 2; i <= numberToFactor; i = i + 1) {
             factorialReturn = factorialReturn * i;
         }
 
