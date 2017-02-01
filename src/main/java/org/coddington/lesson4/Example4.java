@@ -40,7 +40,7 @@ public class Example4 {
 
          and variables can be used as expressions, too...
 
-         int a = 5;
+
          a + 2
          a * a
          (a - 2) + (5 + a)

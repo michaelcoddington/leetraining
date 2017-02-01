@@ -2,9 +2,9 @@ package org.coddington.lesson1;
 
 import com.sun.org.apache.xpath.internal.operations.Or;
 
-/**
- * @author michaelcoddington
- */
+
+ @author michaelcoddington
+
 public class Example1 {
 
     public static void main(String[] args) {
