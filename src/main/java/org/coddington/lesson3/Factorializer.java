@@ -12,13 +12,8 @@ package org.coddington.lesson3;
 public class Factorializer {
 
     public int factorial(int numberToFactor) {
-        int factorialReturn = 1;
-
-        for (int i = 2; i <= numberToFactor; i = i + 1) {
-            factorialReturn = factorialReturn * i;
-        }
-
-        return factorialReturn;
+        int result = 1;
+        return 0;
     }
 
 }

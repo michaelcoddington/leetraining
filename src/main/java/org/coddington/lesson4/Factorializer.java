@@ -13,9 +13,14 @@ public class Factorializer {
 
     Calculator calc = new Calculator();
 
-    public int factorial(int i) {
-        int result = 1;
-        return 0;
+    public int factorial(int numberToFactor) {
+        int factorialReturn = 1;
+
+        for (int i = 2; i <= numberToFactor; i = i + 1) {
+            factorialReturn = factorialReturn * i;
+        }
+
+        return factorialReturn;
     }
 
 }
