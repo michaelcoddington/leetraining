@@ -11,9 +11,10 @@ public class FactorializerTest {
 
     Factorializer f = new Factorializer();
 
-    @Test(expected = FactorialException.class)
+    @Test
     public void testFactorial0() throws FactorialException {
         int fact = f.factorial(0);
+        assertEquals(1, fact);
     }
 
     @Test
