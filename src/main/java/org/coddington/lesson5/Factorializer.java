@@ -54,6 +54,15 @@ public class Factorializer {
             return lr * factorialByRecursion(lr - 1);
         }
 
+        /*
+
+        recursion =  a method calls itself to solve some problem.
+            A method that uses this technique is recursive.
+            Many programming problems can be solved only by recursion,
+            and some problems that can be solved by other techniques
+            are better solved by recursion.
+
+         */
 
     }
 
