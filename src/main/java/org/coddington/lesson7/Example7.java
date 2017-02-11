@@ -1,9 +1,19 @@
 package org.coddington.lesson7;
 
 /**
+ * Lesson 7: Writing data to a file, part 2
+ * and concepts of object orientation, part 1
+ *
+ * AKA how to write to a file dyslexically
+ *
  * @author michaelcoddington
  */
 public class Example7 {
+
+    public static void main(String[] args) {
+
+    }
+
 }
 
 /*
@@ -22,8 +32,14 @@ public class Example7 {
  *    "static" indicates this method is not associated with a specific object, but with the class itself
  *       (we'll discuss this later)
  *
- * 4) MEMBER:
- *    A variable associated with an object.
+ * 4) There are 4 key principles of object orientation:
+ *    * Abstraction -- not having to always define things
+ *    * Encapsulation -- keeping data organized and hidden
+ *    * Inheritance -- adding functionality to a class by elaborating on its capabilities
+ *    * Polymorphism -- allowing an object to serve different purposes in different contexts
  *
+ *    Interfaces are related to ABSTRACTION and POLYMORPHISM.
+ *    Modifiers like "public", "private", etc. are related to ENCAPSULATION.
  *
+ *    We'll talk about inheritance in the next lesson.
  */

@@ -1,7 +1,5 @@
 package org.coddington.lesson1;
 
-import com.sun.org.apache.xpath.internal.operations.Or;
-
 
 public class Example1 {
 

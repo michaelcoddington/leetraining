@@ -23,13 +23,16 @@ public class Example6 {
  *
  * 3) System.out.println
  *    "System" is a class in the Java Standard Library.  It is in the java.lang package (we'll talk about packages later).
+ *    http://docs.oracle.com/javase/7/docs/api/java/lang/System.html
  *    "out" is a MEMBER of the System class (we'll talk about this in lesson 7).
  *    It's something you can use to make messages appear on the screen (and much more)
  *    "println" is a method that writes a string and a "newline" character (like hitting the Enter key)
  *
  * 4) File: a class in the java.io package. It's a class that provides access to a file on disk.
+ *    http://docs.oracle.com/javase/7/docs/api/java/io/File.html
  *
  * 5) PrintWriter: a class in the java.io package. It's one class (there are others) that let you write data to a File.
+ *    http://docs.oracle.com/javase/7/docs/api/java/io/PrintWriter.html
  *
  * 6) Checked exception: an exception that a method says it might throw.  Anything calling that method MUST be
  *    prepared to deal with this exception in case it is thrown by the method.
@@ -67,6 +70,10 @@ public class Example6 {
  *
  * 10) Imports:
  *    When a class in one package needs to use a class in a different package, it needs to "import" that class using
- *    an import statement.  This lets Java know precisely which class is being used, as there may be classes with the same
+ *    an import statement at the top of the class file.
+ *    This lets Java know precisely which class is being used, as there may be classes with the same
  *    name but in different packages, so Java needs to know exactly which class you're using.
+ *
+ *    The only exception to this is when you're using a class in the java.lang package.  Those classes are automatically
+ *    imported for you.
  */
