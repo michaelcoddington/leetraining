@@ -106,4 +106,14 @@ public class Example6 {
  *
  *      but it has a subclass, java.io.PrintWriter (http://docs.oracle.com/javase/7/docs/api/java/io/PrintWriter.html)
  *      that you can instantiate.
+ *
+ *  13) Package:
+ *      A package is a "thing" in the Java language that lets you group classes together.  Its serves other roles
+ *      we'll discuss later, too, related to visibility (public, private, etc.)
+ *
+ *      Classes are usually created within packages -- to not do so is considered extremely bad form.
+ *
+ *      There are many packages in the Java Standard Library (java.lang, java.io. et. al.) and there are several
+ *      packages in this project -- org.coddington.lesson1, org.coddington.lesson2, and so on.  If you look at any
+ *      class in this project, at the top, you'll see it saying which package it is in (including this class!)
  */
