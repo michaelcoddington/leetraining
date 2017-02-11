@@ -76,4 +76,34 @@ public class Example6 {
  *
  *    The only exception to this is when you're using a class in the java.lang package.  Those classes are automatically
  *    imported for you.
+ *
+ * 11) Constructor:
+ *     A special method (or methods) in a class definition that are used when creating a new object of that class.
+ *
+ *     Classes are not required to have a constructor, e.g.
+ *     class SomeClass {
+ *
+ *     }
+ *
+ *     can be created by saying SomeClass sc = new SomeClass();
+ *
+ *     But consider this:
+ *     class SomeClass {
+ *         public SomeClass(String s) {
+ *         }
+ *     }
+ *
+ *     in this case, the only way to create an object of SomeClass is to use a string when creating an object, e.g.
+ *     SomeClass sc = new SomeClass("hi there");
+ *
+ *  12) Abstract class:
+ *      A class that cannot be directly created.  We'll discuss the use of the "abstract" keyword later, as well as
+ *      the role that abstraction plays.  For now, just know that you cannot instantiate an abstract class.  Usually,
+ *      though, abstract classes have subclasses that are not abstract.  You CAN instantiate those classes.
+ *
+ *      e.g. java.io.Writer (http://docs.oracle.com/javase/7/docs/api/java/io/Writer.html) is abstract. You cannot do this:
+ *      Writer w = new Writer();
+ *
+ *      but it has a subclass, java.io.PrintWriter (http://docs.oracle.com/javase/7/docs/api/java/io/PrintWriter.html)
+ *      that you can instantiate.
  */

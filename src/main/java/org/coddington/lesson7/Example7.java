@@ -8,7 +8,7 @@ package org.coddington.lesson7;
  *
  * @author michaelcoddington
  */
-public class Example7 {
+class Example7 {
 
     public static void main(String[] args) {
 

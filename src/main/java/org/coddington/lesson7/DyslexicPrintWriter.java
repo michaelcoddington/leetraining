@@ -9,7 +9,7 @@ import java.io.PrintWriter;
  *
  * @author michaelcoddington
  */
-public class DyslexicPrintWriter extends PrintWriter {
+class DyslexicPrintWriter extends PrintWriter {
 
     DyslexicPrintWriter(File f) throws FileNotFoundException {
         super(f);
