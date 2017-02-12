@@ -12,6 +12,12 @@ public class FactorializerTest {
     org.coddington.lesson4.Factorializer f = new Factorializer();
 
     @Test
+    public void testFactorial0() {
+        int fact = f.factorial(0);
+        assertEquals(1, fact);
+    }
+
+    @Test
     public void testFactorial1() {
         int fact = f.factorial(1);
         assertEquals(1, fact);

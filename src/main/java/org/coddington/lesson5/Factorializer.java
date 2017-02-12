@@ -18,12 +18,9 @@ public class Factorializer {
     public int factorial(int numberToFactor) throws FactorialException {
         if (numberToFactor < 0) {
             throw new FactorialException("Cannot accurately factor numbers less than 0");
-        }
-        if (numberToFactor == 0) {
-
-            return 1;}
-
-        else {
+        } else if (numberToFactor == 0 || numberToFactor == 1) { // see note [1] below
+            return 1;
+        } else {
             return factorialByRecursion(numberToFactor);
         }
     }
@@ -54,9 +51,8 @@ public class Factorializer {
         */
 
         if (lr == 1) {
-           return 1 ;
-        }
-            else
+            return 1;
+        } else {
             return lr * factorialByRecursion(lr - 1);
         }
 
@@ -73,5 +69,23 @@ public class Factorializer {
          */
 
     }
+}
+
+/**
+ * [1] If statements take a boolean expression in the parentheses, e.g:
+ *
+ * if (true)
+ *
+ * OR
+ *
+ * if (x == 2)
+ *
+ * OR
+ *
+ * if (x == 2 || x > 10)
+ *
+ * etc.
+ */
+
 
 

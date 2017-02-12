@@ -42,4 +42,35 @@ class Example7 {
  *    Modifiers like "public", "private", etc. are related to ENCAPSULATION.
  *
  *    We'll talk about inheritance in the next lesson.
+ *
+ *    12) Abstract class:
+ *      A class that cannot be directly created.  We'll discuss the use of the "abstract" keyword later, as well as
+ *      the role that abstraction plays.  For now, just know that you cannot instantiate an abstract class.  Usually,
+ *      though, abstract classes have subclasses that are not abstract.  You CAN instantiate those classes.
+ *
+ *      e.g. java.io.Writer (http://docs.oracle.com/javase/7/docs/api/java/io/Writer.html) is abstract. You cannot do this:
+ *      Writer w = new Writer();
+ *
+ *      but it has a subclass, java.io.PrintWriter (http://docs.oracle.com/javase/7/docs/api/java/io/PrintWriter.html)
+ *      that you can instantiate.
+ *
+ *  13) Package:
+ *      A package is a "thing" in the Java language that lets you group classes together.  Its serves other roles
+ *      we'll discuss later, too, related to visibility (public, private, etc.)
+ *
+ *      Classes are usually created within packages -- to not do so is considered extremely bad form.
+ *
+ *      There are many packages in the Java Standard Library (java.lang, java.io. et. al.) and there are several
+ *      packages in this project -- org.coddington.lesson1, org.coddington.lesson2, and so on.  If you look at any
+ *      class in this project, at the top, you'll see it saying which package it is in (including this class!)
+ *
+ *
+ *       * 10) Imports:
+ *    When a class in one package needs to use a class in a different package, it needs to "import" that class using
+ *    an import statement at the top of the class file.
+ *    This lets Java know precisely which class is being used, as there may be classes with the same
+ *    name but in different packages, so Java needs to know exactly which class you're using.
+ *
+ *    The only exception to this is when you're using a class in the java.lang package.  Those classes are automatically
+ *    imported for you.
  */
