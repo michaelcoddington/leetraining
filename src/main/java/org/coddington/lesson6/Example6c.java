@@ -1,27 +1,32 @@
 package org.coddington.lesson6;
 
+import org.coddington.lesson5.Factorializer;
+
 import java.io.File;
 import java.io.FileNotFoundException;
 import java.io.PrintWriter;
 
 /**
- * Loop-writing!
+ * Lesson 6: Writing data to a file
  *
  * @author michaelcoddington
  */
-public class Example6b {
+public class Example6c {
 
     public static void main(String[] args) {
 
-        // I love you, Lee!
-
-        File f = new File("test.txt");
+        File f = new File("example1.txt");
         PrintWriter pw = null;
+
         try {
             pw = new PrintWriter(f);
-            for (int i = 0; i < 5; i += 1) {
-                pw.println("i is " + i);
+
+            Factorializer c = new Factorializer();
+
+            for (int i = 1; i <= 10; i += 1) {
+
             }
+
         } catch (FileNotFoundException nfne) {
             System.out.println("oh well.");
         } finally {

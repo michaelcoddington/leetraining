@@ -1,6 +1,5 @@
 package org.coddington.lesson6;
 
-import org.coddington.lesson5.FactorialException;
 import org.coddington.lesson5.Factorializer;
 
 import java.io.File;
@@ -29,7 +28,7 @@ public class Challenge6 {
 
             Factorializer c = new Factorializer();
 
-            int numberToFactor = c.factorial(1 - 10);
+            //int numberToFactor = c.factorial(1 - 10);
             // how to give multiple values?
 
             pw.println();
