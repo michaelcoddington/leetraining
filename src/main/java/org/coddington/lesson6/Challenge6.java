@@ -19,7 +19,7 @@ public class Challenge6 {
 
     public static void main(String[] args) {
 
-        File challenge = new File("factorial.csv");
+        File challenge = new File("factorial1.csv");
         PrintWriter pw = null;
 
         try {
@@ -29,9 +29,14 @@ public class Challenge6 {
             Factorializer c = new Factorializer();
 
             //int numberToFactor = c.factorial(1 - 10);
-            // how to give multiple values?
+            // how to give multiple values?  GIVE MULTIPLE VALUES WITH LOOPS
 
             pw.println();
+            for (int i = 1; i <= 10; i++);{
+
+                pw.println(i, Factorializer.factorial(i));
+            }
+
                 //how to hand return info to pw? why string not ints? csv - columns/concatenation?
 
         } catch (FileNotFoundException oops) {

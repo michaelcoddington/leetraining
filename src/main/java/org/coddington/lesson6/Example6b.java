@@ -13,7 +13,6 @@ public class Example6b {
 
     public static void main(String[] args) {
 
-        // I love you, Lee!
 
         File f = new File("test.txt");
         PrintWriter pw = null;

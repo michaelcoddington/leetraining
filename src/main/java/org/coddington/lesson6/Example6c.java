@@ -23,7 +23,7 @@ public class Example6c {
 
             Factorializer c = new Factorializer();
 
-            for (int i = 1; i <= 10; i += 1) {
+            for (int i = 1; i <= 10; i++) {
 
             }
 
