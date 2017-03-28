@@ -32,12 +32,13 @@ public class Challenge6 {
             // how to give multiple values?  GIVE MULTIPLE VALUES WITH LOOPS
 
             pw.println();
+
             for (int i = 1; i <= 10; i++);{
 
-                pw.println(i, Factorializer.factorial(i));
+                pw.println();
             }
 
-                //how to hand return info to pw? why string not ints? csv - columns/concatenation?
+                //TWO VALUES PER LINE  how to hand return info to pw? why string not ints? csv - columns/concatenation?
 
         } catch (FileNotFoundException oops) {
             System.out.println("I caught an exception!");
