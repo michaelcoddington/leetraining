@@ -96,6 +96,8 @@ public class Example6 {
  *    string "hi3there42".
  *
  *
+ *
+ *
  * 11) Constructor:
  *     A special method (or methods) in a class definition that are used when creating a new object of that class.
  *

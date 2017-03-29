@@ -1,5 +1,6 @@
 package org.coddington.lesson6;
 
+import org.coddington.lesson5.FactorialException;
 import org.coddington.lesson5.Factorializer;
 
 import java.io.File;
@@ -19,29 +20,33 @@ public class Challenge6 {
 
     public static void main(String[] args) {
 
-        File challenge = new File("factorial1.csv");
+        File challenge = new File("factorialch6.csv");
         PrintWriter pw = null;
 
         try {
             pw = new PrintWriter(challenge);
             pw.println("Number, Factorial");
 
-            Factorializer c = new Factorializer();
+            Factorializer fcuk= new Factorializer();
 
-            //int numberToFactor = c.factorial(1 - 10);
-            // how to give multiple values?  GIVE MULTIPLE VALUES WITH LOOPS
+            /*
+            int numberToFactor = c.factorial(1 - 10);
+            how to give multiple values?  GIVE MULTIPLE VALUES WITH LOOPS
+            */
 
-            pw.println();
+            for (int i = 1; i <= 10; i++){
 
-            for (int i = 1; i <= 10; i++);{
+                int f = fcuk.factorial(i);
 
-                pw.println();
+                pw.println(i + "," + f);
             }
 
                 //TWO VALUES PER LINE  how to hand return info to pw? why string not ints? csv - columns/concatenation?
 
         } catch (FileNotFoundException oops) {
             System.out.println("I caught an exception!");
+        } catch (FactorialException e) {
+            e.printStackTrace();
         } finally {
             if (pw != null){
                 pw.close();
