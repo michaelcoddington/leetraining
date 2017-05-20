@@ -1,4 +1,4 @@
-package org.coddington.lesson7;
+package org.coddington.lesson8;
 
 import java.io.File;
 import java.io.FileNotFoundException;

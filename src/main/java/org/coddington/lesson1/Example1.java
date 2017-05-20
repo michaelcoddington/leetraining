@@ -21,12 +21,28 @@ public class Example1 {
 
         // talk about objects, starting with arrays and strings
 
-
+        // literal array creation
         int[] intArray = new int[] {13456, 2, 34545, 4, 5345345};
         System.out.println(intArray[2]);
 
+        // creating arrays the hard way
+        int[] ia = new int[2];
+        ia[0] = 1;
+        ia[1] = 3;
+
+        // and you can modify the values
+        ia[0] = 5;
+
         String iLoveLee = "I LOVE LEE!!";
         System.out.println(iLoveLee.charAt(3));
+        /*
+        iLoveLee is an object of type String
+        String objects have a method called "charAt"
+        The charAt method takes one parameter -- the position of the character you want
+        In this case, charAt(3) will retrieve the 4TH character, because almost all numbering in Java
+            starts with 0
+
+         */
 
 
         /*

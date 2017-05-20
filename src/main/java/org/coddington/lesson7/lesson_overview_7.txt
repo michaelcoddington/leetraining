@@ -1,0 +1,74 @@
+Lesson 7: Anatomy of a class, part 1
+
+1) Class structure
+	a) Members
+	b) Methods
+	c) Constructors
+
+	A class is composed of two parts, MEMBERS and METHODS.
+
+	A class is a template from which OBJECTS are created.
+
+	MEMBERS are variables that hold data the object needs to perform its work.
+
+	METHODS define actions the object can perform.
+
+	There is a special type of method, called a CONSTRUCTOR, which is used to create an object.  You don't have to define
+	a constructor for a class.  If you don't, you create an object using the DEFAULT CONSTRUCTOR, like this:
+
+	SuperSimpleClass ssc = new SuperSimpleClass();
+
+	If you do define a constructor, then the DEFAULT constructor will not work.  The constructor you defined
+	MUST be used in order to create an object of that class.  You can also define more than one constructor for a class;
+	in that case, any of the constructors you defined can be used to create an object of that class.
+
+	Note also that the accepted style of writing a class is to define its members, then its contructor(s), then its methods.
+
+	See part1: SimpleClass and Runner1.
+	SimpleClass is a simple class (duh) with a member, a constructor, and a method.
+	Runner1 is a separate class that has a special method -- main() -- which is where program execution starts.
+
+2) Subclasses
+
+	You can add members and methods to a class by EXTENDING it using a SUBCLASS.
+
+	(See part1.SubClass)
+
+	A SUBCLASS is a class that EXTENDS another class and can add additional members and methods to it.  Because
+	it is an extension of another class, it INHERITS all of the members and methods of the class it extends.  The
+	original class, in this context, is known as a SUPERCLASS.  So if you have a class called Parent, you could do this:
+
+	class Child extends Parent {
+	}
+
+	In this case, Child is a SUBCLASS of Parent.  Parent is the SUPERCLASS of Child.
+
+
+3) Access control, a.k.a visibility
+
+	Classes, members, and methods can be hidden from other parts of your code by using ACCESS MODIFIERS.
+
+	There are 4 access modifiers:
+	public
+	package (the empty modifier)
+	protected
+	private
+
+	a) Public
+	   means that this class, member or method can be accessed by any other code, anywhere
+
+	b) Package
+	   means that this class, member or method can only be accessed by code in the same package as the given class
+
+	c) Protected
+	   means that this member or method can only be accessed by this class, any other class in the same package,
+	   or any of its subclasses, irrespective of which package the subclass is in.
+
+	   (this means that "Protected" is actually less restrictive that "Package")
+
+	   Classes cannot have protected access; only members and methods can.
+
+	d) Private
+	   means that this member or method can only be accessed by an object of the given class
+
+	   Classes cannot have private access; only members and methods can.

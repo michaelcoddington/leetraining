@@ -1,14 +1,14 @@
-package org.coddington.lesson7;
+package org.coddington.lesson8;
 
 /**
- * Lesson 7: Writing data to a file, part 2
- * and concepts of object orientation, part 1
+ * Lesson 8: Writing data to a file, part 2
+ * and concepts of object orientation, part 2
  *
  * AKA how to write to a file dyslexically
  *
  * @author michaelcoddington
  */
-class Example7 {
+class Example8 {
 
     public static void main(String[] args) {
 

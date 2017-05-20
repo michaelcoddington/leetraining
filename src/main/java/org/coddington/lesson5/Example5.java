@@ -22,7 +22,7 @@ public class Example5 {
         STACK
 
         an abstract data type that serves as a collection of elements
-        with two principle operations:
+        with two principal operations:
 
         PUSH adds an element to the collection
         POP removes the most recently added element not yet removed
